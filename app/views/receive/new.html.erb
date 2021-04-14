@@ -1,0 +1,13 @@
+<h1>Receive messages</h1>
+
+<%= form_with url: recei_path do |form| %>
+ <div class="mb-3">
+    <%= form.label :Name %>
+   <%= form.text_field :uname, class: "form-control", placeholder: "Username" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit "Search", class: "btn btn-primary" %>
+  </div> 
+
+<% end %>
