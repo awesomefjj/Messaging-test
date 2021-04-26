@@ -10,13 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_14_095332) do
+ActiveRecord::Schema.define(version: 2021_04_22_083349) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.integer "user_id"
     t.datetime "published_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "cities", force: :cascade do |t|
+    t.string "juhe_id"
+    t.string "province"
+    t.string "city"
+    t.string "district"
+    t.string "current_temp"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

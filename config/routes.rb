@@ -13,6 +13,8 @@ get "recei", to: "receive#new"
 post "recei", to: "receive#show"
 get "index_recei", to: "receive#index"
 
+
+
 end
 
 

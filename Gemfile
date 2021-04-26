@@ -58,3 +58,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'echarts-rails', '~> 0.1.6'
 
 gem 'chart'
+
+#jquery 组件
+gem 'jquery-rails'
+
+#API的东西 也许？
+gem 'rest-client'
